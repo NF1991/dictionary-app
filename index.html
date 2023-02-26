@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+
+    <!-- Font -->
+    <!-- CSS -->
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Audio -->
+    <audio id="sound"></audio>
+    <!-- Background colour -->
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen">
+      <!-- Main Container -->
+      <div
+        class="absolute w-[800px] bg-white/40 .transform translate-x-2/4 translate-y-2/4 bottom-1/2 py-20 px-14 rounded-md shadow-md"
+      >
+        <!-- Search box -->
+        <div class="flex w-full justify-between">
+          <input
+            class="w-[90%] p-2 border-neutral-300 focus:outline-none rounded-md"
+            type="text"
+            id="inputWord"
+            placeholder="Type a word here"
+          />
+          <button
+            class="px-2 width-[10%] border-none rounded-md bg-blue-900 text-white"
+            id="searchBtn"
+          >
+            Search
+          </button>
+        </div>
+        <!-- Result -->
+        <div id="result" class="relative"></div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
